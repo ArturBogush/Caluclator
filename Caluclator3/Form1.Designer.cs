@@ -59,7 +59,6 @@
             this.ButtonMMinus_click = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -388,22 +387,11 @@
             this.button28.UseVisualStyleBackColor = true;
             this.button28.Click += new System.EventHandler(this.ButtonMClear_Click);
             // 
-            // button26
-            // 
-            this.button26.Location = new System.Drawing.Point(650, 444);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(112, 34);
-            this.button26.TabIndex = 30;
-            this.button26.Text = "🗑";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.ButtonDel_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 490);
-            this.Controls.Add(this.button26);
             this.Controls.Add(this.button28);
             this.Controls.Add(this.button27);
             this.Controls.Add(this.ButtonMMinus_click);
@@ -439,7 +427,6 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -479,7 +466,6 @@
         private Button ButtonMMinus_click;
         private Button button27;
         private Button button28;
-        private Button button26;
 
         public EventHandler button16_Click { get; private set; }
     }

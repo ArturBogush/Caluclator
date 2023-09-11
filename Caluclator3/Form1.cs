@@ -15,11 +15,6 @@ namespace Caluclator3
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button20_Click(object sender, EventArgs e)
         {
             double dn, res;
@@ -228,11 +223,6 @@ namespace Caluclator3
         private void ButtonMClear_Click(object sender, EventArgs e)
         {
             memoryValue = 0.0;
-        }
-
-        private void ButtonDel_Click(object sender, EventArgs e)
-        {
-
         }
     }
        
