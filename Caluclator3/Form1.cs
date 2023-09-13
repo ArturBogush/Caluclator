@@ -82,12 +82,9 @@ namespace Caluclator3
             textBox1.Text = "0";
         }
 
-        private void button17_Click(object sender, EventArgs e)
+        private void OperationButton_Click(object sender, EventArgs e)
         {
-            Button B = (Button)sender;
-            D = B.Text;
-            N1 = textBox1.Text;
-            n2 = true;
+           
         }
         private void button13_Click(object sender, EventArgs e)
         {
@@ -223,6 +220,49 @@ namespace Caluclator3
         private void ButtonMClear_Click(object sender, EventArgs e)
         {
             memoryValue = 0.0;
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            D = "+";
+            N1 = textBox1.Text;
+            n2 = true;
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            D = "-";
+            N1 = textBox1.Text;
+            n2 = true;
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            D = "*";
+            N1 = textBox1.Text;
+            n2 = true;
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            D = ":";
+            N1 = textBox1.Text;
+            n2 = true;
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            double result = 0;
+            if (D == "%")
+            {
+                result = (operand1 * operand2) / 100;
+            }
+
+            else
+
+            {
+                result = 0;
+            }
         }
     }
        
